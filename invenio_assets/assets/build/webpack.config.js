@@ -187,6 +187,8 @@ var webpackConfig = {
     }),
     // Removes the dist folder before each run.
     new CleanWebpackPlugin({
+      dry: false,
+      verbose: false,
       dangerouslyAllowCleanPatternsOutsideProject: true,
     }),
     // Automatically inject jquery
